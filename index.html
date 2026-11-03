@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevOps Flow | Deployment Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <div class="brand">
+            <span class="brand-icon">☁</span>
+            <span>DevOps Flow</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="#home" class="nav-link active">
+                <span>⌂</span> Home
+            </a>
+
+            <a href="#monitoring" class="nav-link">
+                <span>▥</span> Monitoring
+            </a>
+        </div>
+
+    </nav>
+
+    <!-- Main Website -->
+    <main id="home" class="container">
+
+        <!-- Heading -->
+        <header class="hero">
+
+            <h1>DevOps Project</h1>
+
+            <p>
+                End-to-End Deployment Pipeline:
+                GitHub → Jenkins → Docker →
+                Kubernetes → Monitoring
+            </p>
+
+        </header>
+
+        <!-- DevOps Pipeline -->
+        <section class="pipeline">
+
+            <div class="pipeline-stage">
+
+                <div class="stage-icon github">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 .9A11.1 11.1 0 0 0 8.5 22.5c.55.1.75-.24.75-.53v-2.06c-3.06.67-3.7-1.3-3.7-1.3-.5-1.28-1.22-1.62-1.22-1.62-1-.69.08-.68.08-.68 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.57 1.2 3.2.91.1-.71.38-1.2.7-1.48-2.45-.28-5.02-1.23-5.02-5.47 0-1.21.43-2.2 1.13-2.98-.12-.28-.49-1.41.1-2.94 0 0 .92-.3 3.03 1.14a10.5 10.5 0 0 1 5.52 0c2.1-1.44 3.02-1.14 3.02-1.14.6 1.53.23 2.66.11 2.94.7.78 1.12 1.77 1.12 2.98 0 4.25-2.57 5.19-5.03 5.46.4.35.75 1.03.75 2.08v3.08c0 .29.2.63.76.52A11.1 11.1 0 0 0 12 .9Z"/>
+                    </svg>
+                </div>
+
+                <h3>GitHub</h3>
+
+            </div>
+
+            <div class="pipeline-arrow">→</div>
+
+            <div class="pipeline-stage">
+
+                <div class="stage-icon jenkins">
+                    <span>J</span>
+                </div>
+
+                <h3>Jenkins</h3>
+
+            </div>
+
+            <div class="pipeline-arrow">→</div>
+
+            <div class="pipeline-stage">
+
+                <div class="stage-icon docker">
+                    <span>▦</span>
+                </div>
+
+                <h3>Docker</h3>
+
+            </div>
+
+            <div class="pipeline-arrow">→</div>
+
+            <div class="pipeline-stage">
+
+                <div class="stage-icon kubernetes">
+                    <span>☸</span>
+                </div>
+
+                <h3>Kubernetes</h3>
+
+            </div>
+
+            <div class="pipeline-arrow">→</div>
+
+            <div class="pipeline-stage">
+
+                <div class="stage-icon grafana">
+                    <span>◉</span>
+                </div>
+
+                <h3>Monitoring</h3>
+                <p class="stage-subtitle">(Grafana)</p>
+
+            </div>
+
+        </section>
+
+        <!-- Deployment Status -->
+        <section class="success-banner">
+
+            <h2>
+                <span class="success-icon">✓</span>
+                Deployment Successful!
+            </h2>
+
+            <p>
+                Your application is running on Kubernetes
+                and being monitored.
+            </p>
+
+        </section>
+
+        <!-- Dashboard Cards -->
+        <section class="dashboard">
+
+            <!-- Application Status -->
+            <div class="card status-card">
+
+                <div class="card-header status-header">
+
+                    <span class="card-icon">☸</span>
+
+                    <h3>Application Status</h3>
+
+                </div>
+
+                <div class="card-body">
+
+                    <div class="status-row">
+                        <span>Namespace</span>
+                        <span>default</span>
+                    </div>
+
+                    <div class="status-row">
+                        <span>Pods</span>
+
+                        <span class="running">
+                            <span class="status-dot"></span>
+                            Running
+                        </span>
+                    </div>
+
+                    <div class="status-row">
+                        <span>Service</span>
+                        <span>Active</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Monitoring Links -->
+            <div class="card monitoring-card" id="monitoring">
+
+                <div class="card-header monitoring-header">
+
+                    <span class="card-icon">▥</span>
+
+                    <h3>Monitoring Links</h3>
+
+                </div>
+
+                <div class="card-body monitoring-body">
+
+                    <a
+                        href="http://localhost:3000"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="monitor-button"
+                    >
+                        <span>◉</span>
+                        Grafana Dashboard
+                    </a>
+
+                    <a
+                        href="http://localhost:9090"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="monitor-button"
+                    >
+                        <span>♨</span>
+                        Prometheus Metrics
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        Built with <span class="heart">♥</span>
+        using DevOps Tools
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

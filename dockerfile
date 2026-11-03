@@ -1,0 +1,13 @@
+
+FROM nginx:alpine
+
+# Remove the default Nginx website
+RUN rm -rf /usr/share/nginx/html/*
+
+# Copy the frontend files into Nginx
+COPY index.html /usr/share/nginx/html/index.html
+COPY style.css /usr/share/nginx/html/style.css
+COPY script.js /usr/share/nginx/html/script.js
+
+# Nginx listens on port 80
+EXPOSE 80
