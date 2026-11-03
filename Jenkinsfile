@@ -15,6 +15,14 @@ pipeline {
                 bat 'docker build -t devops-website:latest .'
             }
         }
+        stage('Check Jenkins Environment') {
+    steps {
+        bat 'whoami'
+        bat 'minikube profile list'
+        bat 'kubectl config current-context'
+        bat 'docker context show'
+    }
+}
 
         stage('Load Image into Minikube') {
             steps {
