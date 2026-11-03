@@ -264,7 +264,9 @@ The Kubernetes pods running in the Minikube cluster.
 The custom Grafana dashboard displaying CPU and memory utilization of the website pod.
 <img width="1391" height="397" alt="Screenshot 2026-11-03 171101" src="https://github.com/user-attachments/assets/6fc77d3e-58df-4492-b002-f5452f9995f1" />
 
-DevOps Website Project — File Structure
+## 📁 Project File Structure
+
+```text
 devops-website/
 │
 ├── index.html
@@ -283,6 +285,8 @@ devops-website/
 └── monitoring/
     └── prometheus/
         └── prometheus.yml
+```
+
         
 ## Skills Demonstrated
 
