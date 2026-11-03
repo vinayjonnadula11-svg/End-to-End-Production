@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: devops-flow:latest
+          image: devops-website:latest
 
           imagePullPolicy: Never
 
