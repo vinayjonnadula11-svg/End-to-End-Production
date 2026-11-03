@@ -1,0 +1,28 @@
+
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: devops-flow
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: devops-flow
+
+  template:
+    metadata:
+      labels:
+        app: devops-flow
+
+    spec:
+      containers:
+        - name: nginx
+          image: devops-flow:latest
+
+          imagePullPolicy: Never
+
+          ports:
+            - containerPort: 80
