@@ -279,12 +279,9 @@ devops-website/
 ├── README.md
 │
 ├── kubernetes/
-│   ├── deployment.yaml
-│   └── service.yaml
-│
-└── monitoring/
-    └── prometheus/
-        └── prometheus.yml
+   ├── deployment.yaml
+   └── service.yaml
+
 ```
 
         
